@@ -1,0 +1,24 @@
+server:
+  port: 9999
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  application:
+    name: document converter
+
+jodconverter:
+  local:
+    enabled: true
+    port-numbers: 2002,2003
+    format-options:
+      html:
+        store:
+          TEXT:
+            FilterOptions: EmbedImages
+
+      xhtml:
+        store:
+          TEXT:
+            FilterOptions: EmbedImages

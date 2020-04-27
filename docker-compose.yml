@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  jodconverter-service:
+    build: .
+    restart: unless-stopped
+    ports:
+      - 9999:9999
